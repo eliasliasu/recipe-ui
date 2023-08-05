@@ -10,9 +10,9 @@ export class RecipeListComponent implements OnInit {
 
   constructor(private recipeService: RecipeService) { }
 
-  //TODO: Will be replace by actual data from spring backend later
+  //TODO: Will be replace by actual data from spring backend later, api/v1/recipes
   // recipes = [{id:1, name:'Fried Rice', description:'Rice, groundnut oil, green onion, spices, peppe,salt, etc'},
-  //           {id:2, name:'Beans-poradge', description:'Beans, palm oil, peppe, onion, spicies, etc'},
+  //           {id:2, name:'Beans-porridge', description:'Beans, palm oil, peppe, onion, spicies, etc'},
   //           {id:3, name: 'Akara', description:'Grounded beans, palm oil, peppe, salt, fish, etc'}
   //           ];
 

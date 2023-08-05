@@ -1,20 +1,38 @@
-<div class="container">
-    <div class="p-5">
-        <form (ngSubmit)="onSubmit()">
-            <h3>Recipe Form</h3>
-            <input type="hidden" id="id" name="id" [(ngModel)]="model.id">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name"
-                required name="name" [(ngModel)]="model.name">
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Your other head content here -->
+    <style>
+        /* Define a class for the margin */
+        .bottom-margin {
+            margin-bottom: calc(100vh - 160px); /* Adjust the value based on your needs */
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="p-5">
+              <form (ngSubmit)="onSubmit()">
+                    <h3>Recipe Form</h3>
+                    <input type="hidden" id="id" name="id" [(ngModel)]="model.id">
+                 <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name"
+                    required name="name" [(ngModel)]="model.name">
+                 </div>
+                 <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <input type="area" class="form-control" id="description"
+                    required name="description" [(ngModel)]="model.description">
+                 </div>
+                 <div class="bottom-margin">
+                 <button class="btn btn-primary" type="submit">Save</button>
+                </div>
+              </form>
             </div>
-            <div class="mb-3">
-                <label for="description" class="form-label">Description</label>
-                <input type="area" class="form-control" id="description"
-                required name="description" [(ngModel)]="model.description">
-            </div>
-            <button class="btn btn-primary" type="submit">Save</button>
-        </form>
-    </div>
-</div>
+        </div>
+    </body>
+</html>
 

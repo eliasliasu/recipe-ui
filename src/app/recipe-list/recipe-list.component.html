@@ -1,4 +1,17 @@
-<div class="container">
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Your other head content here -->
+    <style>
+        /* Define a class for the margin */
+        .bottom-margin {
+            margin-bottom: calc(100vh - 160px); /* Adjust the value based on your needs */
+        }
+    </style>
+    </head>
+    <body>
+    <div class="container" style="overflow: auto; max-height: fit-content;" >
     <h2>Recipes</h2>
 
     <div *ngIf="selectedRecipe">
@@ -15,6 +28,14 @@
         <a (click)="onDelete(recipe)" class="link-primary">Delete</a>
     </div>
 
-    <a [routerLink]="['/recipes']" class="btn btn-primary">Add Recipe</a>
-</div>
+    <!-- <a [routerLink]="['/recipes']" class="btn btn-primary">Add Recipe</a> -->
+
+    <div class="bottom-margin">
+        <a [routerLink]="['/recipes']" class="btn btn-primary">Add Recipe</a>
+    </div>
+
+    </div>
+    </body>
+</html>
+
 
